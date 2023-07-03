@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Nunito', sans-serif;
+   transform: all .2s linear;
+   outline: none; 
+   border:none;
+   text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.form-container {
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.form-container form{
+    background-color: none;
+    border:2px solid white;
+    padding: 1rem 2rem;
+    text-align: center;
+ }
+
+.title {
+  text-align: center;
+  font-size: 25px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   color: olivedrab;
+}
+
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 48%;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+#gender {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.radio {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.radio input[type="radio"] {
+  margin-right: 5px;
+}
+
+#plan, #profile {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: olivedrab;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #555;
+}
+
+.form-container form p{
+    font-size: 16px;
+    margin-top: 10px;
+    color:  white;
+ }
+ 
+ .form-container form p a{
+    color: olivedrab;
+ }
+
+
+
+@media screen and (max-width: 600px) {
+  .form-flex {
+    flex-direction: column;
+  }
+  
+  .box {
+    width: 100%;
+  }
+}
